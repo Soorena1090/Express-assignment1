@@ -1,0 +1,15 @@
+{
+  "name": "express_project",
+  "version": "1.0.0",
+  "description": "",
+  "license": "ISC",
+  "author": "",
+  "type": "module",
+  "main": "App.js",
+  "scripts": {
+    "start": "node ./src/App.js"
+  },
+  "dependencies": {
+    "express": "^5.1.0"
+  }
+}
