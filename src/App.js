@@ -1,11 +1,18 @@
-import express from 'express';
+import express from "express";
 const app = express();
 const port = 3000;
 
-app.get('/api/sum', (req,res) => {
-    res.send()
-})
+app.get("/api/sum", (req, res) => {
+  const a = +req.query.a;
+  const b = +req.query.b;
+  const result = a + b;
 
-app.listen(port, ()=> {
-    console.log(`listen to port ${port}`);
-})
+  const response = {
+    result: result,
+  };
+  res.send(response);
+});
+
+app.listen(port, () => {
+  console.log(`listen to port ${port}`);
+});
